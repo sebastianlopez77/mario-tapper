@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="marioTapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mario-bg" translatesAutoresizingMaskIntoConstraints="NO" id="RgB-5x-6aT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mario-Tapper" translatesAutoresizingMaskIntoConstraints="NO" id="yot-ws-TuT">
+                                <rect key="frame" x="139" y="20" width="322" height="53"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="322" id="cxx-lW-fIC"/>
+                                    <constraint firstAttribute="height" constant="53" id="e6J-3X-chh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIF-2z-arI" userLabel="PlayButton">
+                                <rect key="frame" x="167" y="433" width="266" height="56"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="Ant-fT-ytQ"/>
+                                    <constraint firstAttribute="height" constant="56" id="hsJ-DI-aRz"/>
+                                </constraints>
+                                <state key="normal" image="play-button"/>
+                                <connections>
+                                    <action selector="hiddeItems:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ip-jY-4or"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many tabs to win?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tiq-xf-KtP">
+                                <rect key="frame" x="167" y="355" width="266" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="3SS-nc-dfG"/>
+                                    <constraint firstAttribute="width" constant="266" id="ur8-ff-d93"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQp-6c-ko9" userLabel="QuestionButton">
+                                <rect key="frame" x="253" y="153" width="95" height="95"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="Vrk-H5-gIJ"/>
+                                    <constraint firstAttribute="width" constant="95" id="dCA-I8-oL0"/>
+                                </constraints>
+                                <state key="normal" image="question-block"/>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 Taps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhg-UM-RTB">
+                                <rect key="frame" x="167" y="279" width="266" height="63"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Hok-hj-dIU"/>
+                                    <constraint firstAttribute="width" constant="266" id="mmV-xS-ayh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" red="0.29019607843137257" green="0.59215686274509804" blue="0.22352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tiq-xf-KtP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4wJ-e0-1Ja"/>
+                            <constraint firstItem="LQp-6c-ko9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eba-nQ-lGy"/>
+                            <constraint firstItem="yot-ws-TuT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Kh1-cv-sGw"/>
+                            <constraint firstItem="RgB-5x-6aT" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Rz1-c9-9Bg"/>
+                            <constraint firstItem="RgB-5x-6aT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Tjl-e5-D4v"/>
+                            <constraint firstItem="xIF-2z-arI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WO8-AV-jyn"/>
+                            <constraint firstItem="xIF-2z-arI" firstAttribute="top" secondItem="Tiq-xf-KtP" secondAttribute="bottom" constant="48" id="f9D-2O-qtt"/>
+                            <constraint firstItem="RgB-5x-6aT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iCB-2t-gBP"/>
+                            <constraint firstItem="yot-ws-TuT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nmC-s5-bPA"/>
+                            <constraint firstItem="LQp-6c-ko9" firstAttribute="top" secondItem="yot-ws-TuT" secondAttribute="bottom" constant="80" id="nut-N1-ZaC"/>
+                            <constraint firstItem="Fhg-UM-RTB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qOw-cd-gR7"/>
+                            <constraint firstItem="Fhg-UM-RTB" firstAttribute="top" secondItem="LQp-6c-ko9" secondAttribute="bottom" constant="31" id="rkK-Cg-Muc"/>
+                            <constraint firstAttribute="trailing" secondItem="RgB-5x-6aT" secondAttribute="trailing" id="vap-fx-f3i"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xIF-2z-arI" secondAttribute="bottom" constant="111" id="wLG-Gy-JZw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="howManyTapsTxt" destination="Tiq-xf-KtP" id="9I5-fI-jaW"/>
+                        <outlet property="logoImg" destination="yot-ws-TuT" id="B0Z-GS-LUl"/>
+                        <outlet property="playBtn" destination="xIF-2z-arI" id="r5w-zw-pfg"/>
+                        <outlet property="tabBtn" destination="LQp-6c-ko9" id="EPt-j6-qQk"/>
+                        <outlet property="tapsLabel" destination="Fhg-UM-RTB" id="4GO-rc-Ngi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="400"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Mario-Tapper" width="752" height="126"/>
+        <image name="mario-bg" width="1080" height="1920"/>
+        <image name="play-button" width="600" height="138"/>
+        <image name="question-block" width="256" height="256"/>
+    </resources>
+</document>
